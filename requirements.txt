@@ -1,0 +1,6 @@
+numpydoc==0.8.0
+responses==0.10.15
+tqdm==4.46.1
+ujson==3.0.0
+https://download.pytorch.org/whl/cpu/torch-1.5.0%2Bcpu-cp36-cp36m-win_amd64.whl
+https://download.pytorch.org/whl/cpu/torchvision-0.6.0%2Bcpu-cp36-cp36m-win_amd64.whl
