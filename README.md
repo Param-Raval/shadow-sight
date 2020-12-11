@@ -1,24 +1,31 @@
-# ST-CGAN: Stacked Conditional Generative Adversarial Networks for Jointly Learning Shadow Detection and Shadow Removal with PyTorch
+# Shadow Sight
 
-This repository is unofficial implementation of  [Stacked Conditional Generative Adversarial Networks for Jointly Learning Shadow Detection and Shadow Removal](https://arxiv.org/abs/1712.02478) [Wang+, **CVPR** 2018] with PyTorch.
+Shadow Detection and removal is the process of enhance the computer vision applications including image segmentation, object recognition, object tracking etc. Detection and Removal of shadow from the images and videos can reduce the undesirable outcomes in the computer vision applications and algorithms. 
 
-**Official Dataset and Code(coming soon...) is [here](https://github.com/DeepInsight-PCALab/ST-CGAN).**
+ShadowSight uses Stacked Conditional GANs trained on ISTD and implemented unofficially in [this project](https://github.com/IsHYuhi/ST-CGAN_Stacked_Conditional_Generative_Adversarial_Networks). 
 
 ## Requirements
+* Flask
 * Python3.x
 * PyTorch 1.5.0
 * pillow
 * matplotlib
 
-## Usage
+## Run 
+
+Run `app.py` to start the application locally. You can make changes to parameters inside the scripts as needed.
+
+## Some Implementation Details from the ST-CGAN project
+
+### Usage
 * Set datasets under ```./dataset```. You can Download datasets from [here](https://github.com/DeepInsight-PCALab/ST-CGAN). 
 
 Then,
-### Training
+#### Training
 ```
 python3 train.py
 ```
-### Testing
+#### Testing
 When Testing images from ISTD dataset.
 ```
 python3 test.py -l <checkpoint number>
@@ -29,22 +36,22 @@ python3 test.py -l <checkpoint number> -i <image_path> -o <out_path>
 ```
 
 
-## Results
+### Results
 Here is a result from test sets.
 ![](https://github.com/IsHYuhi/ST-CGAN_Stacked_Conditional_Generative_Adversarial_Networks/blob/master/result/91-3.png)
 (Left to right: input, ground truth, shadow removal, ground truth shadow, shadow detection)
 
-### Shadow Detection
+#### Shadow Detection
 Here are some results from validation set.
 ![](https://github.com/IsHYuhi/ST-CGAN_Stacked_Conditional_Generative_Adversarial_Networks/blob/master/result/detected_shadow.jpg)
 (Top to bottom: ground truth, shadow detection)
 
-### Shadow Removal
+#### Shadow Removal
 Here are some results from validation set.
 ![](https://github.com/IsHYuhi/ST-CGAN_Stacked_Conditional_Generative_Adversarial_Networks/blob/master/result/shadow_removal.jpg)
 (Top to bottom: input, ground truth, shadow removal)
 
-## Trained model
+### Trained model
 You can download from [here](https://drive.google.com/drive/folders/1J1l21k5AoUXHxic-Bj3eXBFP--YzjFXO?usp=sharing).
 
 ## References
