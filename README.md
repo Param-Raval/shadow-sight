@@ -14,8 +14,8 @@ Shadow Detection and removal is the process of enhance the computer vision appli
 * matplotlib
 
 ## Run 
-
-Run `app.py` to start the application locally. You can make changes to parameters inside the scripts as needed.
+* Download the checkpoints (pre-trained model) from [here](https://drive.google.com/drive/folders/1J1l21k5AoUXHxic-Bj3eXBFP--YzjFXO?usp=sharing) and place them in a folder called *checkpoints*.
+* Run `app.py` to start the application locally. You can make changes to parameters inside the scripts as needed.
 
 ## Some Implementation Details from the ST-CGAN project
 
