@@ -2,7 +2,9 @@
 
 Shadow Detection and removal is the process of enhance the computer vision applications including image segmentation, object recognition, object tracking etc. Detection and Removal of shadow from the images and videos can reduce the undesirable outcomes in the computer vision applications and algorithms. 
 
-ShadowSight uses Stacked Conditional GANs trained on ISTD and implemented unofficially in [this project](https://github.com/IsHYuhi/ST-CGAN_Stacked_Conditional_Generative_Adversarial_Networks). 
+* ShadowSight uses Stacked Conditional GANs trained on ISTD and implemented unofficially in [this project](https://github.com/IsHYuhi/ST-CGAN_Stacked_Conditional_Generative_Adversarial_Networks). 
+
+* This project gives the service of shadow detection and removal in the form of a Flask application
 
 ## Requirements
 * Flask
